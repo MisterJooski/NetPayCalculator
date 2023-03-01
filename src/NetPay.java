@@ -29,8 +29,7 @@ public class NetPay {
 		double stateDeduction = (STATE_TAX_PERCENT/100) * grossPay;
 		double socialSecurity = (SS_PERCENT/100) * grossPay;
 		double medicareDeduction = (MEDICARE_PERCENT/100)*grossPay;
-		double totalDeduction = (federalDeduction + stateDeduction + 
-												socialSecurity + medicareDeduction);
+		double totalDeduction = (federalDeduction + stateDeduction + socialSecurity + medicareDeduction);
 		double netPay = grossPay - totalDeduction;
 		
 		System.out.println("Gross Pay:\t\t" + grossPay);
